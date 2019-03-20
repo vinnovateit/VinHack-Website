@@ -8165,3 +8165,12 @@ body.is-touch #banner {
         padding: 0
     }
 }
+
+
+body.landing.is-preload:before {
+    display: none
+}
+
+body.landing.is-preload:after {
+    display: none
+}
