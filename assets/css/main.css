@@ -3542,6 +3542,7 @@ body.landing #header {
     max-width: 95%;
     padding: 6em;
     position: relative;
+    bottom:100px;
     text-align: right;
     vertical-align: middle;
     z-index: 1
@@ -3570,6 +3571,74 @@ body.landing #header {
     vertical-align: middle;
     width: 18em
 }
+
+#banner .content button.reg {
+    position: absolute;
+    left:50%;
+    top:100%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  outline: none;
+  background: none;
+  color: white;
+  border: none;
+}
+
+.reg {
+    
+    letter-spacing: 0.25em;
+    margin-top: 10px;
+    padding: 1rem 2.5rem;
+    background: transparent;
+    outline: none;
+    font-size: 14px;
+    color: white;
+  }
+  
+  .reg:hover{
+      color: white;
+  }
+  
+  .reg::after, .reg::before {
+    content: "";
+    outline: none;
+    position: absolute;
+    height: 70%;
+    width: 39%;
+    -webkit-transform: skewX(30deg);
+            transform: skewX(30deg);
+    -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: -2;
+  }
+  
+  .reg::before {
+    background-color: #020202;
+    top: .3rem;
+    left: 1.6rem;
+  }
+  
+  .reg::after {
+    background-color: #181515;
+    top: 1rem;
+    left: 50%;
+  }
+  
+  .reg:hover::before {
+    top: 13%;
+    left: 50%;
+    -webkit-transform: skewx(0deg);
+            transform: skewx(0deg);
+  }
+  
+  .reg:hover::after{
+      top: 13%;
+      left:1.6rem;
+      -webkit-transform: skewx(0deg);
+              transform: skewx(0deg);
+  }
 
 #banner .content .image img {
     border-radius: 100%;
@@ -8147,7 +8216,7 @@ body.is-touch #banner {
     }
 
     #banner .content {
-        padding: 3em 1.5625em 5.25em 1.5625em
+        padding: 3em 1.5625em 5.25em 1.5625em;
     }
 
     #footer {

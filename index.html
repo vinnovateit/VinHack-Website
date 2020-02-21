@@ -31,18 +31,137 @@
 	<meta itemprop="name" content="VinHack - VinnovateIT">
 	<meta itemprop="description" content="A Hackathon by VinnovateIT | 22nd March - 23 March | SITE - VIT Vellore">
 	<meta itemprop="image" content="#">
+    <link rel="stylesheet" href="assets/css/registerButton.css">
+
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 	<link rel="shortcut icon" type="image/png" href="favicon.png">
-
 	<!-- Google fonts cdn -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic">
 </head>
 
 <body class="is-preload landing">
+	<div class="form">
+		<form >
+			<div id="q1">
+				<label for="">Email Address</label>
+				<div class="wrap-input100 validate-input m-b-16">
+					<input class="input100" type="text" name="text" placeholder="tony@starkenterprises.com">
+					<span class="focus-input100"></span>
+					<span class="symbol-input100">
+						<i class="fas fa-envelope-square"></i>
+					</span>
+				</div>
+				<a class="btn" onclick="nextpage(this)" href="#">Next</a>
+			</div>
+			<div class="layer" id="q2">
+				<label for="">Name</label>
+				<div class="wrap-input100">
+					<input class="input100" type="text"  placeholder="Anthony Edward Tony Stark">
+					<span class="focus-input100"></span>
+					<span class="symbol-input100">
+						<i class="fas fa-users fa-xs"></i>
+					</span>
+				</div>
+				<a class="btn" onclick="nextpage(this)" href="#">Next</a>
+			</div>
+			<div class="layer" id="q3">
+				<label for="">Registration Number</label>
+				<div class="wrap-input100" >
+					<input class="input100" type="text"  placeholder="19BMEXXXX">
+					<span class="focus-input100"></span>
+					<span class="symbol-input100">
+						<i class="fas fa-registered fa-xs"></i>
+					</span>
+				</div>
+				<a class="btn" onclick="nextpage(this)" href="#">Next</a>
+			</div>
+			<div class="layer" id=q4>
+				<label for="">Mobile Number</label>
+				<div class="wrap-input100 ">
+					<input class="input100" type="text"  placeholder="9999999999">
+					<span class="focus-input100"></span>
+					<span class="symbol-input100">
+						<i class="fas fa-phone-square-alt fa-xs"></i>
+					</span>
+				</div>
+				<a class="btn" onclick="nextpage(this)" href="#">Next</a>
+			</div>
+			<div class="layer" id="q5">
+				<label style="text-decoration:underline"  for="">Gender</label>
+				<div class="wrap-input100">
+					<div class="radio">
+						<input id="cbx1" type="checkbox"/>
+						<label class="cbx1" for="cbx2">
+						  <div class="flip">
+							<div class="front"></div>
+							<div class="back">
+							  <svg width="16" height="14" viewBox="0 0 16 14">
+								<path d="M2 8.5L6 12.5L14 1.5"></path>
+							  </svg>
+							</div>
+						  </div>
+						</label>
+						<span><i class="fas fa-male fa-1x"></i></span>
+						<span>Male</span>
+
+					</div>
+					<div class="radio">
+						<input id="cbx2" type="checkbox"/>
+						<label class="cbx2" for="cbx2">
+						  <div class="flip">
+							<div class="front"></div>
+							<div class="back">
+							  <svg width="16" height="14" viewBox="0 0 16 14">
+								<path d="M2 8.5L6 12.5L14 1.5"></path>
+							  </svg>
+							</div>
+						  </div>
+						</label>
+						<span><i class="fas fa-female fa-1x"></i></span>
+						<span>Female</span>
+
+					</div>
+				</div>
+				<a class="btn" onclick="nextpage(this)" href="#">Next</a>
+			</div>
+
+			<div class="layer"id="q6">
+				<label for="">Team Name</label>
+				<div class="wrap-input100 ">
+					<input class="input100" type="text" placeholder="Avengers">
+					<span class="focus-input100"></span>
+					<span class="symbol-input100">
+						<i class="fab fa-teamspeak fa-xs"></i>
+					</span>
+				</div>
+				<a class="btn" onclick="nextpage(this)" href="#">Next</a>
+			</div>
+			<div class="layer"id="q7">
+				<label style="text-decoration:underline" for="">Hostel Details</label>
+				<label for="">Block</label>
+				<div class="wrap-input100 ">
+					<input class="input100" type="text" placeholder="L">
+					<span class="focus-input100"></span>
+					<span class="symbol-input100">
+						<i class="fas fa-building fa-xs"></i>
+					</span>
+				</div>
+				<label for="">Room Number</label>
+				<div class="wrap-input100" >
+					<input class="input100" type="text" placeholder="420">
+					<span class="focus-input100"></span>
+					<span class="symbol-input100">
+						<i class="fas fa-building fa-xs"></i>
+					</span>
+				</div>
+				<div class="btn submitt">Submit<!--<input type="submit" value="Submit"> not able to remove outline for this--></div>
+			</div>
+		  </form>
+		</div>
 	<div id="page-wrapper">
 
 		<!-- Header -->
@@ -60,9 +179,14 @@
 					<a href="http://www.githublookbook.com/VinHack/" target="_blank"><button class="gradient-button" id="live-update-btn">View Live Updates</button></a>
 				</header>
 				<span class="image"><img src="images/main.png" alt="VinnovateIT Logo" /></span>
+				<button  class="reg">Register now</button>
+
 			</div>
 			<a href="#one" class="goto-next scrolly">Next</a>
 		</section>
+
+		<!-- registerButton -->
+
 
 		<!-- One -->
 		<section id="one" class="spotlight style1 bottom">
@@ -307,8 +431,9 @@
 
 		gtag('config', 'UA-136415898-1');
 	</script>
-
-	<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>s
+    <script src="https://kit.fontawesome.com/695fbc93f3.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.min.js" integrity="sha256-ML8IRYDq+4A+Q0st1M2hnraAcPp0IBf0g3YswHC0qGQ=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 	<script src="assets/js/custom.js"></script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>
@@ -316,6 +441,7 @@
 	<script src="assets/js/breakpoints.browser.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/registerButton.js"></script>
 
 
 </body>
