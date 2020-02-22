@@ -3584,6 +3584,7 @@ body.landing #header {
   background: none;
   color: white;
   border: none;
+  cursor: pointer;
 }
 
 .reg {

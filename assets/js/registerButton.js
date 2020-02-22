@@ -21,20 +21,20 @@ t1.to('#banner',.5,{filter:"blur(5px)"},'-=.85').fromTo('#q1',1,{
     opacity:1,
     ease: "Power2.out"
 },'-=.85')
-
-button.addEventListener('click',()=>{t1.restart();firstlayer.style.display="flex"});
+var i=1;
+var f;
+var before;
+var after;
+button.addEventListener('click',()=>{t1.restart();firstlayer.style.display="flex";i=1});
 submit.addEventListener('click',()=>{lastlayer.style.display="none"})
 
 const t2=new TimelineLite({paused:true});
 
 
-var i=1;
-var f;
-var before;
-var after;
+
 function nextpage(){
     console.log(i);
-    if(i<7){
+    if(i<8){
         f="q"+i;
         before=document.getElementById(f);
         before.style.display="none";
@@ -53,10 +53,10 @@ function nextpage(){
             //      opacity:0,
             //      ease: "Power2.out"
             //  },'-=.85');
-             t2.play();
+             
     }
     console.log(i);
-    if(i<8){
+    if(i<9){
         i++;
         console.log(i);
         f="q"+i;
@@ -65,7 +65,7 @@ function nextpage(){
         console.log(after.style.display);
     }
     console.log(i);
-    if(i==7){
+    if(i==8){
         i=1;
         document.querySelector('#banner').style.filter="blur(0)";
     }

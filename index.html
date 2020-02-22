@@ -31,8 +31,8 @@
 	<meta itemprop="name" content="VinHack - VinnovateIT">
 	<meta itemprop="description" content="A Hackathon by VinnovateIT | 22nd March - 23 March | SITE - VIT Vellore">
 	<meta itemprop="image" content="#">
-    <link rel="stylesheet" href="assets/css/registerButton.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+	<link rel="stylesheet" href="assets/css/registerButton.css">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -92,45 +92,41 @@
 				<a class="btn" onclick="nextpage(this)" href="#">Next</a>
 			</div>
 			<div class="layer" id="q5">
-				<label style="text-decoration:underline"  for="">Gender</label>
-				<div class="wrap-input100">
-					<div class="radio">
-						<input id="cbx1" type="checkbox"/>
-						<label class="cbx1" for="cbx2">
-						  <div class="flip">
-							<div class="front"></div>
-							<div class="back">
-							  <svg width="16" height="14" viewBox="0 0 16 14">
-								<path d="M2 8.5L6 12.5L14 1.5"></path>
-							  </svg>
-							</div>
-						  </div>
-						</label>
-						<span><i class="fas fa-male fa-1x"></i></span>
-						<span>Male</span>
-
+				<label   for="">Gender</label>
+				<div class="checkbox">
+				<input type="checkbox" id="cbx" style="display: none;">
+                <label for="cbx" class="check">
+                <svg width="18px" height="18px" viewBox="0 0 18 18">
+                <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                <polyline points="1 9 7 14 15 4"></polyline>
+                </svg>
+				</label>
+				<span>Male</span>
+				</div>
+				    <div class="checkbox">
+					<input type="checkbox" id="cbx1" style="display: none;">
+					<label for="cbx1" class="check1">
+					<svg width="18px" height="18px" viewBox="0 0 18 18">
+					<path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+					<polyline points="1 9 7 14 15 4"></polyline>
+					</svg>
+					</label>
+					<span>Female</span>
 					</div>
-					<div class="radio">
-						<input id="cbx2" type="checkbox"/>
-						<label class="cbx2" for="cbx2">
-						  <div class="flip">
-							<div class="front"></div>
-							<div class="back">
-							  <svg width="16" height="14" viewBox="0 0 16 14">
-								<path d="M2 8.5L6 12.5L14 1.5"></path>
-							  </svg>
-							</div>
-						  </div>
-						</label>
-						<span><i class="fas fa-female fa-1x"></i></span>
-						<span>Female</span>
-
-					</div>
+				<a class="btn" onclick="nextpage(this)" href="#">Next</a>
+			</div>
+			<div class="layer"id="q6">
+				<label for="">GitHub id</label>
+				<div class="wrap-input100 ">
+					<input class="input100" type="text" placeholder="⫷Ironᴍan⫸">
+					<span class="focus-input100"></span>
+					<span class="symbol-input100">
+						<i class="fab fa-github"></i>
+					</span>
 				</div>
 				<a class="btn" onclick="nextpage(this)" href="#">Next</a>
 			</div>
-
-			<div class="layer"id="q6">
+			<div class="layer"id="q7">
 				<label for="">Team Name</label>
 				<div class="wrap-input100 ">
 					<input class="input100" type="text" placeholder="Avengers">
@@ -141,7 +137,7 @@
 				</div>
 				<a class="btn" onclick="nextpage(this)" href="#">Next</a>
 			</div>
-			<div class="layer"id="q7">
+			<div class="layer"id="q8">
 				<label style="text-decoration:underline" for="">Hostel Details</label>
 				<label for="">Block</label>
 				<div class="wrap-input100 ">
