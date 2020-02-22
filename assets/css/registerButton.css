@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
+.blur{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    z-index:9999999999999;
+    filter:blur(10px);
+    background-color: #726d6d;
+    opacity: 0.6;
+    display: none;
+}
 
 .layer{
     
@@ -38,7 +50,7 @@
     position: fixed;
     top:50%;
     left: 50%;
-    clip-path: circle(10% at 50% 50%);
+    /* clip-path: circle(10% at 50% 50%); */
     transform: translate(-50%,-50%);
     box-shadow: 0 0 18px #020202;
     overflow: hidden;
