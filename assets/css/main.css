@@ -3573,9 +3573,8 @@ body.landing #header {
 }
 
 #banner .content button.reg {
-    position: absolute;
-    left:50%;
-    top:100%;
+    position: relative;
+    left:9rem;
     transform: translate(-50%,-50%);
     text-transform: uppercase;
   text-decoration: none;
@@ -3585,6 +3584,10 @@ body.landing #header {
   color: white;
   border: none;
   cursor: pointer;
+}
+
+#banner .content a{
+    border-bottom: none;
 }
 
 .reg {
@@ -3616,13 +3619,13 @@ body.landing #header {
   }
   
   .reg::before {
-    background-color: #020202;
+    background-color: #1fa8e7;
     top: .3rem;
     left: 1.6rem;
   }
   
   .reg::after {
-    background-color: #181515;
+    background-color: #2f1d94;
     top: 1rem;
     left: 50%;
   }

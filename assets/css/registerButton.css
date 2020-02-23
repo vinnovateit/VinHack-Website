@@ -16,8 +16,9 @@
 
 .layer{
     
-    background-image: url('/assets/images/popup.png') ;
-    background-size: cover;
+    /* background-image: url('/assets/images/popup.png') ; 
+    background-size: cover; */
+    background-color: rgb(23, 24, 32);
     object-fit: cover;
     color: white;
     padding: 20px;
@@ -41,8 +42,9 @@
 }
 
 #q1{
-    background-image: url('/assets/images/popup.png') ;
-    background-size: cover;
+    /* background-image: url('/assets/images/popup.png') ;
+    background-size: cover; */
+    background-color: rgb(23, 24, 32);
     object-fit: cover;
     color: white;
     padding: 20px;
@@ -108,13 +110,13 @@ a.btn{
 }
 
 .btn::before {
-  background-color: #020202;
+  background-color: #207ba5;
   top: .3rem;
   left: 21%;
 }
 
 .btn::after {
-  background-color: #201e1e;
+  background-color: #251772;
   top: 1rem;
   left: 50%;
 }
@@ -176,7 +178,11 @@ a.btn{
     width: 100%;
     height: 100%;
     box-shadow: 0px 0px 0px 0px;
-    color: rgba(211,63,141, 0.6);
+    color: rgba(48, 45, 196, 0.904);
+  }
+
+  .input100:focus{
+    border-color: rgb(48,45,196)!important;
   }
   
   .input100:focus + .focus-input100 {
@@ -226,7 +232,7 @@ a.btn{
   }
   
   .input100:focus + .focus-input100 + .symbol-input100 {
-    color: #d33f8d;
+    color: rgba(48, 45, 196, 0.904);
     padding-left: 18px;
   }
   
